@@ -1,0 +1,22 @@
+# API key
+.comtrade_key
+
+# Data (download from the original sources; see README)
+Data/UNComtrade/raw/
+Data/UNComtrade/reference/
+Data/BACI/
+Data/OEC/
+Data/worldmap/
+Data/Network/
+Data/*.csv
+Data/UNComtrade/*.csv
+
+# Outputs
+Figures/
+
+# R / OS
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+.DS_Store
