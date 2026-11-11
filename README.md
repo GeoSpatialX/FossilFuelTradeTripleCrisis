@@ -27,16 +27,8 @@ Monthly bilateral trade records from the [UN Comtrade Database](https://comtrade
 | Variables used | `refYear`, `refMonth`, `reporterCode`, `partnerCode`, `flowCode`, `cmdCode`, `netWgt`, `isNetWgtEstimated`, `primaryValue` |
 
 Save the files as CSV in `Data/UNComtrade/raw/`. `Scripts/1_data_process.R` reads every CSV in that folder, so
-the way the download is split across files does not matter.
-
-`Data/UNComtrade/download_hs27.py` is the Python script we used for the download. It calls the UN Comtrade
-API and saves one file per reporter and year (`hs27m_<reporter>_<year>.csv`):
-
-1. Get a free API subscription key from the [UN Comtrade API portal](https://comtradedeveloper.un.org/).
-2. Save the key as a single line in `Data/UNComtrade/.comtrade_key`. This file is excluded by `.gitignore`;
-   never commit it.
-3. Run `python Data/UNComtrade/download_hs27.py`. It needs `pandas` and `requests`. Re-running it skips files
-   that are already downloaded.
+the way the download is split across files does not matter. Bulk downloads can be made through the
+[UN Comtrade API](https://comtradedeveloper.un.org/) (a free subscription key is required).
 
 Records are revised over time, so a new download may differ slightly from ours (downloaded in August 2025).
 

@@ -1,6 +1,3 @@
-# API key
-.comtrade_key
-
 # Data (download from the original sources; see README)
 Data/UNComtrade/raw/
 Data/UNComtrade/reference/
